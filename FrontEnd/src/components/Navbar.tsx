@@ -6,7 +6,6 @@ import { useState } from "react";
 import { useTheme } from "../contexts/ThemeContext";
 
 const Navbar = () => {
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { isDarkMode, toggleTheme, isHydrated } = useTheme();
   const pathname = usePathname();

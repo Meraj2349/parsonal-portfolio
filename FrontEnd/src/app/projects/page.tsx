@@ -154,7 +154,7 @@ export default function Projects() {
                 }`}
               >
                 Get a comprehensive overview of my skills, experience,
-                education, and all the projects I've worked on.
+                education, and all the projects I&apos;ve worked on.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a

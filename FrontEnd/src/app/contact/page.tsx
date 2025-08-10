@@ -33,7 +33,7 @@ ${formData.message}`;
         message:
           "Message copied to clipboard! You can paste it in an email to mdmerajmridha34@gmail.com",
       });
-    } catch (err) {
+    } catch {
       setSubmitStatus({
         type: "error",
         message:
@@ -120,7 +120,7 @@ You can reply directly to: ${formData.email}`
             "Email service temporarily unavailable. Your email client has been opened as backup.",
         });
         setFormData({ name: "", email: "", subject: "", message: "" });
-      } catch (fallbackError) {
+      } catch {
         setSubmitStatus({
           type: "error",
           message:

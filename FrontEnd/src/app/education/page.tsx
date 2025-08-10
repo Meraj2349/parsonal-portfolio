@@ -331,7 +331,7 @@ export default function Education() {
                   isDarkMode ? "text-white" : "text-gray-900"
                 }`}
               >
-                Dean's List
+                Dean&apos;s List
               </h3>
               <p
                 className={`text-sm ${
