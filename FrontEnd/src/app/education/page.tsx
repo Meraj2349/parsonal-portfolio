@@ -10,20 +10,21 @@ export default function Education() {
   const education = [
     {
       degree: "B.Sc. in Software Engineering",
-      institution: "Shahjalal University of Science & Technology (SUST)",
+      institution: "Shahjalal University of Science & Technology",
       location: "Sylhet, Bangladesh",
-      period: "2022 - 2026",
+      period: "2022–present",
       cgpa: "In Progress",
       description:
-        "Currently pursuing Bachelor of Science in Software Engineering at SUST, one of Bangladesh's premier technology universities. The curriculum covers comprehensive software development methodologies, algorithms, data structures, web technologies, and software project management. Active participation in programming competitions and development projects.",
+        "Currently pursuing B.Sc. in Software Engineering at SUST. Focused on software development, algorithms, data structures, web technologies, and research. Active in competitions and student organizations.",
       subjects: [
         "Software Engineering",
-        "DSA",
-        "OOP",
+        "Object-Oriented Programming (OOP)",
+        "Data Structures & Algorithms (DSA)",
         "Web Development",
         "Database Systems",
         "AI/ML",
-        "Software Architecture",
+        "Computer Networks",
+        "Operating Systems",
       ],
       resultLink: "#",
       logo: "/images/school/sust1.jpg",

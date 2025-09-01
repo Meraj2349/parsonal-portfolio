@@ -7,69 +7,36 @@ export default function Certificates() {
 
   const certificates = [
     {
-      title: "Full Stack Web Development",
-      issuer: "freeCodeCamp",
-      date: "2024",
+      title: "Python Programming and Basic Data Science",
+      issuer:
+        "Institute of Information and Communication Technology (IICT), SUST & EDGE Project, Bangladesh Computer Council, ICT Division",
+      date: "May 2025",
       description:
-        "Comprehensive certification covering HTML, CSS, JavaScript, React, Node.js, and MongoDB",
-      credentialId: "FCC-FSWD-2024",
-      skills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
+        "Successfully completed a training on 'Python Programming and Basic Data Science' (80 hours) conducted by IICT, SUST from Dec 2024 to Feb 2025, under EDGE Project of Bangladesh Computer Council, ICT Division.",
+      credentialId: "EDGE-DSTS-126-8766-00014",
+      skills: ["Python", "Data Science", "Digital Skills"],
+      image: "/images/certificate/EDGE.jpg",
     },
     {
-      title: "React Developer Certification",
-      issuer: "Meta",
-      date: "2024",
+      title:
+        "8th International Conference on Engineering Research, Innovation & Education (ICERIE) 2025",
+      issuer: "Shahjalal University of Science and Technology, Sylhet",
+      date: "April 2025",
       description:
-        "Advanced React concepts including hooks, context, performance optimization, and testing",
-      credentialId: "META-REACT-2024",
-      skills: [
-        "React",
-        "Redux",
-        "React Router",
-        "Jest",
-        "React Testing Library",
-      ],
+        "Certificate of Participation: Contributed as a dedicated volunteer in the 8th ICERIE 2025 held at SUST from 24 to 26 April 2025. Commitment and effort in supporting the success of this event have been highly valued.",
+      credentialId: "ICERIE-2025",
+      skills: ["Event Volunteering", "Conference Support"],
+      image: "/images/certificate/INternationalConference.jpeg",
     },
     {
-      title: "Node.js Developer Path",
-      issuer: "MongoDB University",
-      date: "2023",
+      title: "Nactar Robotics Olympiad 2022",
+      issuer: "NACTAR & Robo Tech Valley",
+      date: "2022",
       description:
-        "Backend development with Node.js, Express.js, and MongoDB database integration",
-      credentialId: "MDB-NODE-2023",
-      skills: ["Node.js", "Express.js", "MongoDB", "Mongoose", "RESTful APIs"],
-    },
-    {
-      title: "JavaScript Algorithms and Data Structures",
-      issuer: "freeCodeCamp",
-      date: "2023",
-      description:
-        "Problem-solving with JavaScript including algorithms, data structures, and programming fundamentals",
-      credentialId: "FCC-JS-2023",
-      skills: [
-        "JavaScript",
-        "Algorithms",
-        "Data Structures",
-        "Problem Solving",
-      ],
-    },
-    {
-      title: "AWS Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      description:
-        "Foundational understanding of AWS cloud services, architecture, and best practices",
-      credentialId: "AWS-CP-2023",
-      skills: ["AWS", "Cloud Computing", "EC2", "S3", "CloudFormation"],
-    },
-    {
-      title: "Git and GitHub Essentials",
-      issuer: "GitHub",
-      date: "2023",
-      description:
-        "Version control, collaboration workflows, and Git best practices for development teams",
-      credentialId: "GH-GIT-2023",
-      skills: ["Git", "GitHub", "Version Control", "Collaboration", "CI/CD"],
+        "Certificate of Participation: Participated in the Segment 'Line follower robot (LFR)' as part of Team STUBBORN in NACTAR Robotics Olympiad 2022.",
+      credentialId: "NACTAR-2022",
+      skills: ["Robotics", "Line Follower Robot", "Teamwork"],
+      image: "/images/certificate/NactarRoboticsOlympiad.jpeg",
     },
   ];
 
@@ -132,6 +99,17 @@ export default function Certificates() {
                   : "bg-white hover:bg-gray-50 border-gray-200 shadow-lg"
               }`}
             >
+              {/* Certificate Image */}
+              {cert.image && (
+                <div className="mb-6 w-full flex justify-center">
+                  <img
+                    src={cert.image}
+                    alt={cert.title + " certificate"}
+                    className="rounded-lg max-h-[350px] w-auto object-contain border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-md"
+                    style={{ maxWidth: "100%" }}
+                  />
+                </div>
+              )}
               {/* Certificate Header */}
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-grow">
@@ -215,16 +193,19 @@ export default function Certificates() {
                 </div>
               </div>
 
-              {/* Verify Button */}
-              <button
-                className={`w-full py-2 border rounded-lg transition-colors text-sm font-medium ${
+              {/* Download Button */}
+              <a
+                href={cert.image}
+                download
+                className={`w-full block text-center py-2 border rounded-lg transition-colors text-sm font-medium ${
                   isDarkMode
                     ? "border-gray-600 text-gray-300 hover:bg-gray-800"
                     : "border-gray-300 text-gray-700 hover:bg-gray-100"
                 }`}
+                title="Download Certificate"
               >
-                Verify Certificate
-              </button>
+                Download Certificate
+              </a>
             </div>
           ))}
         </div>

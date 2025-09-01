@@ -51,11 +51,14 @@ export default function About() {
                   isDarkMode ? "text-gray-300" : "text-gray-700"
                 }`}
               >
-                Hi! I&apos;m Md. Meraj Mridha, a passionate Software Engineering
-                student at Shahjalal University of Science & Technology (SUST).
-                With over 3 years of programming experience, I specialize in
-                full-stack development with expertise in JavaScript, TypeScript,
-                React.js, Next.js, and modern web technologies.
+                Hi! I&apos;m Md. Meraj Mridha, a Software Engineering student at
+                Shahjalal University of Science & Technology (SUST). I am
+                passionate about full stack development, problem solving, and
+                building impactful solutions. My expertise includes JavaScript,
+                Python, React.js, Next.js, Node.js, and modern web technologies.
+                I enjoy collaborating on innovative projects and have
+                contributed to research and competitions in AI, robotics, and
+                software engineering.
               </p>
 
               <p
@@ -63,25 +66,12 @@ export default function About() {
                   isDarkMode ? "text-gray-300" : "text-gray-700"
                 }`}
               >
-                Currently pursuing my B.Sc. in Software Engineering (2022-2026)
-                at SUST, I&apos;ve developed multiple innovative projects
-                including SmartSchool management system, Library Management App
-                using Android & Firebase, and contributed to cutting-edge
-                projects like FarmAI and ICERIE conference website.
-              </p>
-
-              <p
-                className={`text-base sm:text-lg leading-relaxed ${
-                  isDarkMode ? "text-gray-300" : "text-gray-700"
-                }`}
-              >
-                My technical expertise spans across frontend technologies
-                (React, Next.js, Vue.js), backend development (Node.js,
-                Express.js, Django), databases (MySQL, PostgreSQL, MongoDB), and
-                mobile development (Android with Java). I&apos;m also
-                experienced in competitive programming with 500+ problems solved
-                across various platforms including LeetCode, Codeforces, and
-                CodeChef.
+                Currently pursuing my B.Sc. in Software Engineering
+                (2022–present) at SUST, I have developed projects like
+                SmartSchool, ICERIE website, Library Management App, SkillMate
+                AI Platform, and FarmAI. I am also active in student
+                organizations and have solved 400+ problems on platforms like
+                LeetCode and Codeforces.
               </p>
 
               {/* Quick Facts */}
@@ -108,16 +98,49 @@ export default function About() {
                     }`}
                   >
                     <div className="w-2 h-2 bg-blue-500 rounded-full mr-4 flex-shrink-0"></div>
-                    Student ID: 200831034 at SUST
+                    Email: mdmerajmridha34@gmail.com
                   </li>
-
                   <li
                     className={`flex items-center text-sm sm:text-base ${
                       isDarkMode ? "text-gray-300" : "text-gray-700"
                     }`}
                   >
                     <div className="w-2 h-2 bg-blue-500 rounded-full mr-4 flex-shrink-0"></div>
-                    Full-Stack & Mobile Developer
+                    Phone: +8801997588476
+                  </li>
+                  <li
+                    className={`flex items-center text-sm sm:text-base ${
+                      isDarkMode ? "text-gray-300" : "text-gray-700"
+                    }`}
+                  >
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-4 flex-shrink-0"></div>
+                    B.Sc. in Software Engineering, SUST (2022–present)
+                  </li>
+                  <li
+                    className={`flex items-center text-sm sm:text-base ${
+                      isDarkMode ? "text-gray-300" : "text-gray-700"
+                    }`}
+                  >
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-4 flex-shrink-0"></div>
+                    Vice President, Chokh Film Society (2025–present)
+                  </li>
+                  <li
+                    className={`flex items-center text-sm sm:text-base ${
+                      isDarkMode ? "text-gray-300" : "text-gray-700"
+                    }`}
+                  >
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-4 flex-shrink-0"></div>
+                    General Secretary, Tangail Students’ Association of SUST
+                    (2023–2024)
+                  </li>
+                  <li
+                    className={`flex items-center text-sm sm:text-base ${
+                      isDarkMode ? "text-gray-300" : "text-gray-700"
+                    }`}
+                  >
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-4 flex-shrink-0"></div>
+                    Campus Ambassador, University Innovation Hub Program
+                    (2022–present)
                   </li>
                 </ul>
               </div>

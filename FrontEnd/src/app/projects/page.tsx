@@ -11,64 +11,39 @@ export default function Projects() {
     {
       title: "SmartSchool",
       description:
-        "Comprehensive school management system built with React.js, Express.js, and MySQL. Features admin panel for managing student/teacher information, attendance tracking, results management, online admissions, and interactive learning platform.",
-      technologies: [
-        "React.js",
-        "Express.js",
-        "MySQL",
-        "Node.js",
-        "JavaScript",
-        "CSS",
-      ],
-      github: "https://github.com/Meraj2349/SchoolProject",
+        "Developed a full-stack school management system using React.js, Express.js, and MySQL. Designed and built an admin panel to manage student/teacher information, track attendance and results, and handle online admissions. Implemented an interactive learning platform and event management.",
+      technologies: ["React.js", "Express.js", "MySQL"],
+      github: "github/repo",
       demo: "#",
       image: "/api/placeholder/600/300",
+      featured: true,
+    },
+    {
+      title: "ICERIE website",
+      description:
+        "Collaborated on the design and development of the ARCES 2024 project using Next.js. Contributed to feature implementation (navbar, homepage, track page), performed bug fixes, and participated in code reviews. Utilized Git for version control and practiced collaborative software development.",
+      technologies: ["Next.js", "Tailwind CSS", "Express.js", "MongoDB"],
+      github: "github/repo",
+      demo: "live demo",
+      image: "/images/project/ICRIEimage.png",
       featured: true,
     },
     {
       title: "Library Management App",
       description:
-        "Full-featured Android library system using Java and Firebase. Includes CRUD operations for book inventory, secure user authentication, real-time data synchronization, advanced search, and Material Design interface.",
-      technologies: [
-        "Java",
-        "Firebase",
-        "Android",
-        "Material Design",
-        "XML",
-        "Gradle",
-      ],
-      github: "https://github.com/Meraj2349/Library_Management_App",
+        "Built an Android library application using Java and Firebase. Designed responsive UI layouts with XML. Features include book catalog viewing, advanced search, user authentication, and real-time data synchronization.",
+      technologies: ["Java", "XML", "Firebase"],
+      github: "github/repo",
       demo: "#",
       image: "/images/project/libraryImage.png",
-      featured: true,
-    },
-
-    {
-      title: "ICERIE Website",
-      description:
-        "Collaborative development of the ICERIE website using Next.js. Contributed to feature implementation including navbar, homepage, track page, performed bug fixes, and participated in code reviews.",
-      technologies: ["Next.js", "React", "JavaScript", "CSS", "Git"],
-      github: "https://github.com/Meraj2349/arces_2024",
-      demo: "#",
-      image: "/images/project/ICRIEimage.png",
-      featured: true,
-    },
-    {
-      title: "Video Conferencing App",
-      description:
-        "The Video Conferencing App enables users to create and join video meetings with chat, screen sharing, and recording features.",
-      technologies: ["Tailwind CSS", "React.js", "Next.js", "Clerk", "Stream"],
-      github: "https://github.com/Meraj2349",
-      demo: "#",
-      image: "/api/placeholder/600/300",
       featured: true,
     },
     {
       title: "SkillMate AI Platform",
       description:
-        "AI-powered educational content platform that revolutionizes online learning by aggregating courses from multiple platforms, providing personalized learning paths, and comprehensive progress tracking.",
-      technologies: ["Java Swing", "Firebase", "MongoDB", "AI/ML"],
-      github: "https://github.com/Meraj2349/ai_powered_content_platform",
+        "AI-Enhanced Learning Management System—Created an intelligent educational platform featuring automated content generation using Spring Boot and MongoDB. Implemented performance-optimized database architecture with text search, compound indexing, and real-time metrics serving educational content with AI-powered recommendations.",
+      technologies: ["React.js", "Spring Boot", "Firebase", "MongoDB"],
+      github: "github/repo",
       demo: "#",
       image: "/api/placeholder/600/300",
       featured: false,
@@ -76,9 +51,9 @@ export default function Projects() {
     {
       title: "FarmAI",
       description:
-        "AI-driven agricultural solution developed using Next.js. Contributed to implementing new features and fixing bugs. Engaged in collaborative coding with Git and GitHub for version control.",
-      technologies: ["Next.js", "React", "TypeScript", "AI/ML"],
-      github: "https://github.com/Meraj2349/FarmAI",
+        "Developed a comprehensive farm management system using Next.js, featuring scientific cultivation methods, expert advice, management and image upload functionality.",
+      technologies: ["Next.js", "Tailwind CSS", "Express.js", "MongoDB"],
+      github: "github/repo",
       demo: "#",
       image: "/api/placeholder/600/300",
       featured: false,

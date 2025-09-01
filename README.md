@@ -45,30 +45,35 @@ FrontEnd/
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js 18+ installed
 - npm, yarn, or pnpm
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Meraj2349/parsonal-portfolio.git
    cd parsonal-portfolio/FrontEnd
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**
    Create `.env.local` file:
+
    ```env
    EMAIL_USER=your_email@gmail.com
    EMAIL_PASS=your_gmail_app_password
    ```
 
 4. **Run development server**
+
    ```bash
    npm run dev
    ```
@@ -108,6 +113,7 @@ This project is deployed on Vercel with automatic deployments from the `master` 
 ## 🎨 Theme Support
 
 The portfolio includes a custom theme context that provides:
+
 - Dark and light mode toggle
 - Persistent theme selection
 - Smooth transitions between themes
