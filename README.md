@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 
 ## 🌐 Live Demo
 
-**🔗 [View Live Portfolio](https://parsonal-portfolio-iqqxyr42g-meraj2349s-projects.vercel.app)**
+**🔗 [View Live Portfolio](https://merajmridha.xyz)**
 
 ## 👨‍💻 About Me
 
@@ -130,7 +130,7 @@ Contributions, issues, and feature requests are welcome!
 ## 📞 Contact
 
 - **Email**: mdmerajmridha34@gmail.com
-- **LinkedIn**: [Md. Meraj Mridha](https://linkedin.com/in/your-profile)
+- **LinkedIn**: [Md. Meraj Mridha](https://www.linkedin.com/in/md-meraj-mridha/)
 - **GitHub**: [@Meraj2349](https://github.com/Meraj2349)
 
 ---

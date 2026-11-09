@@ -48,18 +48,18 @@ export default function Home() {
               isDarkMode ? "text-gray-300" : "text-gray-700"
             }`}
           >
-            B.Sc. in Software Engineering @ SUST | Full Stack Developer
+            Junior Software Engineer @ Deep Mind Labs | B.Sc. in Software Engineering @ SUST
           </h2>
           <p
             className={`text-base sm:text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed px-4 ${
               isDarkMode ? "text-gray-400" : "text-gray-600"
             }`}
           >
-            Software Engineering student at Shahjalal University of Science &
-            Technology (SUST), passionate about full stack development, problem
-            solving, and building impactful solutions. Experienced in
-            JavaScript, Python, React.js, Next.js, Node.js, and modern web
-            technologies. Open to collaboration and new opportunities.
+            Junior Software Engineer at Deep Mind Labs and Software Engineering
+            student at SUST. I build full products across web, Android and
+            backend with TypeScript, Next.js, .NET, Kotlin and PostgreSQL, and
+            ship faster with AI-assisted development using Claude Code. Open to
+            collaboration and new opportunities.
           </p>
 
           {/* Action Buttons */}

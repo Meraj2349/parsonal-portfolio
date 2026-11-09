@@ -7,6 +7,75 @@ export default function Experience() {
 
   const experiences = [
     {
+      title: "Junior Software Engineer",
+      company: "Deep Mind Labs",
+      location: "Bangladesh",
+      period: "Present",
+      type: "Full-time",
+      description:
+        "Building production software as part of the engineering team, working across the full stack and using AI-assisted development (Claude Code) to ship well-tested features faster.",
+      responsibilities: [
+        "Build and maintain production features across frontend and backend",
+        "Write tests first and keep CI green on every change",
+        "Use Claude Code, CLAUDE.md project rules and agent skills to speed up development and code review",
+        "Collaborate with the team through Git-based code reviews",
+      ],
+      technologies: [
+        "TypeScript",
+        "Next.js",
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Claude Code",
+        "Git",
+      ],
+      companyLogo: "/api/placeholder/80/80",
+    },
+    {
+      title: "Product Engineer (Personal SaaS Products)",
+      company: "Independent",
+      location: "Sylhet, Bangladesh",
+      period: "2026 - Present",
+      type: "Side Projects",
+      description:
+        "Designing and building full products for the Bangladesh market end to end: web, Android and backend, with local payment gateways (bKash, Nagad, SSLCommerz), bilingual Bangla/English UIs and test-driven development.",
+      responsibilities: [
+        "FarmAI: AI crop disease diagnosis (Gemini) with a priced treatment marketplace, .NET 10 + Next.js + Kotlin",
+        "SOS Emergency Bangladesh: one-tap SOS platform for mechanics, ambulances and fire service with real-time SignalR and PostGIS",
+        "Turf Booking SaaS: multi-tenant booking platform with row-level security and a database-level double-booking guard",
+        "Sebika: Bangla-first medicine reminder that reads prescriptions with AI",
+        "Taka Tracker: Flutter money tracker sold as a SaaS subscription with a NestJS API and admin panel",
+        "Wrote architecture decision records (ADRs), CI/CD pipelines and Docker/Terraform deploys",
+      ],
+      technologies: [
+        ".NET / C#",
+        "Next.js",
+        "Kotlin",
+        "Flutter",
+        "NestJS",
+        "PostgreSQL",
+        "Docker",
+        "Claude Code",
+      ],
+      companyLogo: "/api/placeholder/80/80",
+    },
+    {
+      title: "Leadership & Organizations",
+      company: "Shahjalal University of Science & Technology",
+      location: "Sylhet, Bangladesh",
+      period: "Nov 2022 - Present",
+      type: "Leadership",
+      description:
+        "Leading student organizations alongside my studies and engineering work.",
+      responsibilities: [
+        "Vice President, Chokh Film Society (CFS) - Aug 2025 to present",
+        "General Secretary, Tangail Students' Association of SUST - May 2023 to Nov 2024",
+        "Campus Ambassador, University Innovation Hub Program (UIHP) - Nov 2022 to present",
+      ],
+      technologies: ["Leadership", "Event Management", "Communication", "Teamwork"],
+      companyLogo: "/api/placeholder/80/80",
+    },
+    {
       title: "Software Engineer Intern",
       company: "SUST Software Engineering Department",
       location: "Sylhet, Bangladesh",
@@ -65,7 +134,7 @@ export default function Experience() {
       period: "Jan 2022 - Present",
       type: "Self-Development",
       description:
-        "Active participant in competitive programming contests across multiple platforms. Solved 500+ problems focusing on data structures, algorithms, and problem-solving techniques. Regular contributor to coding communities and peer learning.",
+        "Active participant in competitive programming contests across multiple platforms. Solved 400+ problems focusing on data structures, algorithms, and problem-solving techniques. Regular contributor to coding communities and peer learning.",
       responsibilities: [
         "Solved algorithmic problems on LeetCode, Codeforces, and CodeChef",
         "Participated in weekly programming contests and hackathons",

@@ -28,6 +28,9 @@ function SkillsPage() {
         { name: "TypeScript", icon: "📘" },
         { name: "Python", icon: "🐍" },
         { name: "Java", icon: "☕" },
+        { name: "C#", icon: "#️⃣" },
+        { name: "Kotlin", icon: "🟣" },
+        { name: "Dart", icon: "🎯" },
         { name: "C++", icon: "⚡" },
         { name: "C", icon: "🔤" },
         { name: "SQL", icon: "🗃️" },
@@ -43,6 +46,8 @@ function SkillsPage() {
         { name: "CSS3", icon: "🎨" },
         { name: "Tailwind CSS", icon: "💨" },
         { name: "Bootstrap", icon: "🅱️" },
+        { name: "Ant Design", icon: "🐜" },
+        { name: "TanStack Query", icon: "🔄" },
       ],
     },
     {
@@ -53,6 +58,39 @@ function SkillsPage() {
         { name: "Express.js", icon: "🚀" },
         { name: "Socket.io", icon: "🔌" },
         { name: "REST APIs", icon: "🔗" },
+        { name: ".NET / ASP.NET Core", icon: "🟪" },
+        { name: "Entity Framework Core", icon: "🧱" },
+        { name: "SignalR", icon: "📡" },
+        { name: "NestJS", icon: "🐈" },
+        { name: "Prisma", icon: "🔺" },
+        { name: "Spring Boot", icon: "🌱" },
+        { name: "Hangfire (background jobs)", icon: "⏱️" },
+      ],
+    },
+    {
+      title: "Mobile Development",
+      icon: "📱",
+      skills: [
+        { name: "Kotlin", icon: "🟣" },
+        { name: "Jetpack Compose", icon: "🧩" },
+        { name: "Flutter", icon: "💙" },
+        { name: "Expo / React Native", icon: "📲" },
+        { name: "Android (Java)", icon: "🤖" },
+      ],
+    },
+    {
+      title: "AI & Claude",
+      icon: "🤖",
+      skills: [
+        { name: "Claude Code", icon: "✳️" },
+        { name: "Claude API (Anthropic SDK)", icon: "🧠" },
+        { name: "Agent Skills", icon: "🛠️" },
+        { name: "MCP (Model Context Protocol)", icon: "🔌" },
+        { name: "CLAUDE.md project rules", icon: "📜" },
+        { name: "Prompt Engineering", icon: "💬" },
+        { name: "AI-assisted TDD & Code Review", icon: "✅" },
+        { name: "Google Gemini API", icon: "♊" },
+        { name: "Machine Learning (SVM, LSTM)", icon: "📈" },
       ],
     },
     {
@@ -60,6 +98,8 @@ function SkillsPage() {
       icon: "💾",
       skills: [
         { name: "PostgreSQL", icon: "🐘" },
+        { name: "PostGIS", icon: "🗺️" },
+        { name: "Redis", icon: "🟥" },
         { name: "MongoDB", icon: "🍃" },
         { name: "MySQL", icon: "🐬" },
         { name: "Firebase", icon: "🔥" },
@@ -72,6 +112,12 @@ function SkillsPage() {
         { name: "Git", icon: "📊" },
         { name: "GitHub", icon: "🐱" },
         { name: "Docker", icon: "🐳" },
+        { name: "GitHub Actions (CI/CD)", icon: "⚙️" },
+        { name: "Terraform", icon: "🏗️" },
+        { name: "AWS EC2", icon: "☁️" },
+        { name: "Google Cloud", icon: "🌥️" },
+        { name: "Vercel", icon: "▲" },
+        { name: "Caddy", icon: "🔒" },
         { name: "Selenium", icon: "🔧" },
       ],
     },
@@ -83,6 +129,7 @@ function SkillsPage() {
         { name: "Android Studio", icon: "📱" },
         { name: "IntelliJ IDEA", icon: "🧠" },
         { name: "Figma", icon: "🎨" },
+        { name: "Claude Code", icon: "✳️" },
       ],
     },
     {
@@ -93,6 +140,11 @@ function SkillsPage() {
         { name: "Design Patterns", icon: "🎨" },
         { name: "Data Structures", icon: "📊" },
         { name: "Algorithms", icon: "🧩" },
+        { name: "Clean Architecture", icon: "🏛️" },
+        { name: "Modular Monolith", icon: "🧱" },
+        { name: "Test-Driven Development", icon: "🧪" },
+        { name: "Multi-tenant SaaS", icon: "🏢" },
+        { name: "System Design & ADRs", icon: "📐" },
       ],
     },
     {
@@ -310,7 +362,7 @@ function SkillsPage() {
               }`}
             >
               <div className="text-2xl sm:text-3xl font-bold text-orange-400 mb-2">
-                500+
+                400+
               </div>
               <div
                 className={`text-xs sm:text-sm ${

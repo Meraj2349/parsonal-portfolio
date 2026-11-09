@@ -53,9 +53,10 @@ export default function About() {
               >
                 Hi! I&apos;m Md. Meraj Mridha, a Software Engineering student at
                 Shahjalal University of Science & Technology (SUST). I am
-                passionate about full stack development, problem solving, and
-                building impactful solutions. My expertise includes JavaScript,
-                Python, React.js, Next.js, Node.js, and modern web technologies.
+                working as a Junior Software Engineer at Deep Mind Labs. I build
+                full products across web, Android and backend with TypeScript,
+                Next.js, .NET, Kotlin, Flutter and PostgreSQL, and I use Claude
+                Code, agent skills and MCP for AI-assisted, test-driven development.
                 I enjoy collaborating on innovative projects and have
                 contributed to research and competitions in AI, robotics, and
                 software engineering.
@@ -67,9 +68,9 @@ export default function About() {
                 }`}
               >
                 Currently pursuing my B.Sc. in Software Engineering
-                (2022–present) at SUST, I have developed projects like
-                SmartSchool, ICERIE website, Library Management App, SkillMate
-                AI Platform, and FarmAI. I am also active in student
+                (2022–present) at SUST, I have built projects like
+                FarmAI, SOS Emergency Bangladesh, Turf Booking SaaS, Sebika,
+                Taka Tracker, SmartSchool and the ICERIE website. I am also active in student
                 organizations and have solved 400+ problems on platforms like
                 LeetCode and Codeforces.
               </p>
@@ -208,7 +209,7 @@ export default function About() {
               }`}
             >
               3+ years of software development with 15+ successful projects and
-              500+ problems solved
+              400+ problems solved
             </p>
           </div>
 
@@ -283,7 +284,7 @@ export default function About() {
                 isDarkMode ? "text-gray-400" : "text-gray-600"
               }`}
             >
-              Expert in React, Next.js, Node.js, Android development, and
+              Expert in React, Next.js, .NET, Kotlin/Android, Claude Code and
               competitive programming
             </p>
           </div>

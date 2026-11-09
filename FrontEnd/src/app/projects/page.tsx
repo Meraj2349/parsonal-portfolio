@@ -7,14 +7,55 @@ import { useTheme } from "../../contexts/ThemeContext";
 export default function Projects() {
   const { isDarkMode } = useTheme();
 
+  // github/demo left empty = private repo / no live demo yet
   const projects = [
     {
-      title: "SmartSchool",
+      title: "FarmAI Platform",
       description:
-        "Developed a full-stack school management system using React.js, Express.js, and MySQL. Designed and built an admin panel to manage student/teacher information, track attendance and results, and handle online admissions. Implemented an interactive learning platform and event management.",
-      technologies: ["React.js", "Express.js", "MySQL"],
-      github: "github/repo",
-      demo: "#",
+        "AI crop disease diagnosis to treatment marketplace. Farmers scan a leaf, Gemini diagnoses the disease, and the app builds a basket of real, priced treatment products to order with cash on delivery, plus expert consultations and drone service booking. Built test-first with CI, ADRs and a .NET 10 modular monolith.",
+      technologies: [".NET 10", "C#", "PostgreSQL", "Next.js", "Kotlin", "Jetpack Compose", "Gemini AI", "Hangfire", "Docker"],
+      github: "",
+      demo: "",
+      image: "/api/placeholder/600/300",
+      featured: true,
+    },
+    {
+      title: "SOS Emergency Bangladesh",
+      description:
+        "Emergency response platform connecting citizens with roadside mechanics, ambulances and fire services. One-tap SOS with GPS, PostGIS nearby search, live location and chat over SignalR, QR vehicle stickers, OTP + JWT auth and a bilingual (Bangla/English) web app with 46 routes and an Android app.",
+      technologies: [".NET 8", "SignalR", "PostgreSQL + PostGIS", "Next.js 14", "Kotlin", "Jetpack Compose", "Docker", "AWS"],
+      github: "",
+      demo: "",
+      image: "/api/placeholder/600/300",
+      featured: true,
+    },
+    {
+      title: "Turf Booking SaaS",
+      description:
+        "Multi-tenant turf football booking platform for Bangladesh. One system runs every venue: slot booking with holds, payments through each turf's own bKash/Nagad/SSLCommerz account, staff and cash controls. Tenant isolation with row-level security and a database exclusion constraint that makes double-booking impossible.",
+      technologies: [".NET 10", "PostgreSQL", "Redis", "SignalR", "Hangfire", "Next.js", "Expo", "Cloudflare"],
+      github: "",
+      demo: "",
+      image: "/api/placeholder/600/300",
+      featured: true,
+    },
+    {
+      title: "Sebika - AI Prescription Reader",
+      description:
+        "Bangla-first Android medicine reminder that reads prescriptions with AI. Includes an admin dashboard with role-based permissions, an append-only audit log, PHI-safe logging, per-tenant Postgres isolation, 100+ automated tests, and Terraform infrastructure for Google Cloud.",
+      technologies: ["Kotlin", "Node.js", "TypeScript", "PostgreSQL", "React", "Terraform", "Google Cloud", "GitHub Actions"],
+      github: "",
+      demo: "",
+      image: "/api/placeholder/600/300",
+      featured: true,
+    },
+    {
+      title: "Taka Tracker",
+      description:
+        "Money tracker that asks every 2 hours \"where did you spend your money?\". One Flutter app for Android, iOS and web with offline sync, a NestJS + Prisma API, an admin panel with TOTP login and metrics, subscriptions, and SSLCommerz/bKash/Stripe payments verified server-side.",
+      technologies: ["Flutter", "Dart", "NestJS", "Prisma", "PostgreSQL", "Next.js", "Firebase", "Stripe"],
+      github: "",
+      demo: "",
       image: "/api/placeholder/600/300",
       featured: true,
     },
@@ -23,38 +64,68 @@ export default function Projects() {
       description:
         "Collaborated on the design and development of the ARCES 2024 project using Next.js. Contributed to feature implementation (navbar, homepage, track page), performed bug fixes, and participated in code reviews. Utilized Git for version control and practiced collaborative software development.",
       technologies: ["Next.js", "Tailwind CSS", "Express.js", "MongoDB"],
-      github: "github/repo",
-      demo: "live demo",
+      github: "https://github.com/Meraj2349/arces_2024",
+      demo: "https://icerie2025.sust.edu/",
       image: "/images/project/ICRIEimage.png",
       featured: true,
+    },
+    {
+      title: "SmartSchool",
+      description:
+        "Developed a full-stack school management system using React.js, Express.js, and MySQL. Designed and built an admin panel to manage student/teacher information, track attendance and results, and handle online admissions. Implemented an interactive learning platform and event management.",
+      technologies: ["React.js", "Express.js", "MySQL"],
+      github: "https://github.com/Meraj2349/SchoolProject",
+      demo: "",
+      image: "/api/placeholder/600/300",
+      featured: false,
     },
     {
       title: "Library Management App",
       description:
         "Built an Android library application using Java and Firebase. Designed responsive UI layouts with XML. Features include book catalog viewing, advanced search, user authentication, and real-time data synchronization.",
       technologies: ["Java", "XML", "Firebase"],
-      github: "github/repo",
-      demo: "#",
+      github: "https://github.com/Meraj2349/Library_Management_App",
+      demo: "",
       image: "/images/project/libraryImage.png",
-      featured: true,
+      featured: false,
+    },
+    {
+      title: "SOS Mechanic",
+      description:
+        "Web app for finding a roadside mechanic fast, the first prototype behind SOS Emergency Bangladesh.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      github: "",
+      demo: "https://sos-mechanic.vercel.app/",
+      image: "/api/placeholder/600/300",
+      featured: false,
     },
     {
       title: "SkillMate AI Platform",
       description:
         "AI-Enhanced Learning Management System—Created an intelligent educational platform featuring automated content generation using Spring Boot and MongoDB. Implemented performance-optimized database architecture with text search, compound indexing, and real-time metrics serving educational content with AI-powered recommendations.",
       technologies: ["React.js", "Spring Boot", "Firebase", "MongoDB"],
-      github: "github/repo",
-      demo: "#",
+      github: "https://github.com/Meraj2349/ai_powered_content_platform",
+      demo: "",
       image: "/api/placeholder/600/300",
       featured: false,
     },
     {
-      title: "FarmAI",
+      title: "FarmAI (v1)",
       description:
-        "Developed a comprehensive farm management system using Next.js, featuring scientific cultivation methods, expert advice, management and image upload functionality.",
+        "Farm management system using Next.js, featuring scientific cultivation methods, expert advice, management and image upload functionality. Won 2nd Runner-up at UIHP Innovation 2024.",
       technologies: ["Next.js", "Tailwind CSS", "Express.js", "MongoDB"],
-      github: "github/repo",
-      demo: "#",
+      github: "https://github.com/Meraj2349/FarmAI",
+      demo: "https://farm-ai-fz.vercel.app",
+      image: "/api/placeholder/600/300",
+      featured: false,
+    },
+    {
+      title: "BdSL - Bangla Sign Language",
+      description:
+        "Research project: feature extraction and SVM/LSTM models trained on a Bangla Sign Language dataset.",
+      technologies: ["Python", "Jupyter", "SVM", "LSTM"],
+      github: "https://github.com/Meraj2349/BdSL_Bangla-Sign_Language",
+      demo: "",
       image: "/api/placeholder/600/300",
       featured: false,
     },
@@ -282,6 +353,7 @@ export default function Projects() {
 
                   {/* Action Buttons */}
                   <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+                    {project.github ? (
                     <Link
                       href={project.github}
                       target="_blank"
@@ -301,6 +373,12 @@ export default function Projects() {
                       </svg>
                       Code
                     </Link>
+                    ) : (
+                      <span className={`flex-1 inline-flex items-center justify-center px-3 py-2 border border-dashed rounded-lg text-xs ${isDarkMode ? "border-gray-700 text-gray-500" : "border-gray-300 text-gray-500"}`}>
+                        Private repo
+                      </span>
+                    )}
+                    {project.demo && (
                     <Link
                       href={project.demo}
                       target="_blank"
@@ -326,6 +404,7 @@ export default function Projects() {
                       </svg>
                       Live
                     </Link>
+                    )}
                   </div>
                 </div>
               </div>
@@ -434,6 +513,7 @@ export default function Projects() {
 
                     {/* Action Buttons */}
                     <div className="flex gap-2">
+                      {project.github ? (
                       <Link
                         href={project.github}
                         target="_blank"
@@ -453,6 +533,12 @@ export default function Projects() {
                         </svg>
                         Code
                       </Link>
+                      ) : (
+                        <span className={`flex-1 inline-flex items-center justify-center px-3 py-2 border border-dashed rounded-lg text-xs ${isDarkMode ? "border-gray-700 text-gray-500" : "border-gray-300 text-gray-500"}`}>
+                          Private repo
+                        </span>
+                      )}
+                      {project.demo && (
                       <Link
                         href={project.demo}
                         target="_blank"
@@ -478,6 +564,7 @@ export default function Projects() {
                         </svg>
                         Live
                       </Link>
+                      )}
                     </div>
                   </div>
                 </div>
