@@ -42,9 +42,9 @@ export default function Certificates() {
 
   const achievements = [
     {
-      title: "Winner (Green Geek Squad)",
-      event: "UIHP Innovation Hub Program 2024",
-      description: "Won 40,000 BDT at SUST TC2.",
+      title: "2nd Runner-up (Green Geek Squad)",
+      event: "UIHP Innovation Hub Program 2024 – FarmAI",
+      description: "Awarded 40,000 BDT at SUST TC2.",
       date: "2024",
     },
     {

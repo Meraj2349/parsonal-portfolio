@@ -18,16 +18,17 @@ const achievements: Achievement[] = [
     image: "/images/achievement/nasa_space_apps_2024.jpeg",
   },
   {
-    title: "UIHP Innovation Hub Program 2024",
+    title: "UIHP Innovation Hub Program 2024 – FarmAI",
     description:
-      "Winner (Green Geek Squad) - Awarded 40,000 BDT at SUST TC2 for innovative project in the University Innovation Hub Program.",
+      "2nd Runner-up with team Green Geek Squad for the FarmAI project. Awarded 40,000 BDT at SUST TC2 in the University Innovation Hub Program.",
     image: "/images/achievement/uihp_innovation_2024.jpeg",
+    link: "https://www.linkedin.com/posts/md-meraj-mridha_excitingnews-greengeeksquad-innovation-activity-7255948292147027968-PjwB",
   },
   {
     title: "BdSL Bangla Sign Language",
     description:
       "Implemented feature extraction and trained SVM/LSTM models on research dataset.",
-    link: "#",
+    link: "https://github.com/Meraj2349/BdSL_Bangla-Sign_Language",
   },
   {
     title: "Astrobee Kibo Robot Programming Challenge",
@@ -37,11 +38,6 @@ const achievements: Achievement[] = [
   {
     title: "Therap Javafest 2025",
     description: "Qualified participant.",
-    link: "#",
-  },
-  {
-    title: "UIHP Farm AI Project",
-    description: "2nd Runner-up.",
     link: "#",
   },
   {
