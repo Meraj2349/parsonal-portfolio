@@ -55,7 +55,8 @@ export default function Home() {
               isDarkMode ? "text-gray-400" : "text-gray-600"
             }`}
           >
-            Junior Software Engineer at Deep Mind Labs and Software Engineering
+            Junior Software Engineer (Android) at Deep Mind Labs, building a
+            healthcare patient assessment app, and Software Engineering
             student at SUST. I build full products across web, Android and
             backend with TypeScript, Next.js, .NET, Kotlin and PostgreSQL, and
             ship faster with AI-assisted development using Claude Code. Open to

@@ -53,7 +53,9 @@ export default function About() {
               >
                 Hi! I&apos;m Md. Meraj Mridha, a Software Engineering student at
                 Shahjalal University of Science & Technology (SUST). I am
-                working as a Junior Software Engineer at Deep Mind Labs. I build
+                working as a Junior Software Engineer (Android) at Deep Mind Labs,
+                where I build DMHAI, a healthcare patient assessment app with
+                on-device pose detection. I build
                 full products across web, Android and backend with TypeScript,
                 Next.js, .NET, Kotlin, Flutter and PostgreSQL, and I use Claude
                 Code, agent skills and MCP for AI-assisted, test-driven development.

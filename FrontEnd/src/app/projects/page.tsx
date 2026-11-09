@@ -10,6 +10,16 @@ export default function Projects() {
   // github/demo left empty = private repo / no live demo yet
   const projects = [
     {
+      title: "DMHAI - Healthcare Patient Assessment App",
+      description:
+        "Production multi-tenant Android app (Deep Mind Labs / NPC Healthcare) for patient intake and guided range-of-motion assessments. On-device ML Kit pose detection measures joint angles live and records exercises only when the patient is fully in frame. MVVM + Repository architecture with dynamic tenant routing, JWT refresh and offline media caching.",
+      technologies: ["Kotlin", "Jetpack Compose", "Hilt", "CameraX", "ML Kit", "Room", "Retrofit", "Media3"],
+      github: "",
+      demo: "",
+      image: "/api/placeholder/600/300",
+      featured: true,
+    },
+    {
       title: "FarmAI Platform",
       description:
         "AI crop disease diagnosis to treatment marketplace. Farmers scan a leaf, Gemini diagnoses the disease, and the app builds a basket of real, priced treatment products to order with cash on delivery, plus expert consultations and drone service booking. Built test-first with CI, ADRs and a .NET 10 modular monolith.",

@@ -73,6 +73,11 @@ function SkillsPage() {
       skills: [
         { name: "Kotlin", icon: "🟣" },
         { name: "Jetpack Compose", icon: "🧩" },
+        { name: "MVVM + Hilt", icon: "🧬" },
+        { name: "Retrofit / OkHttp", icon: "🌐" },
+        { name: "Room / DataStore", icon: "🗄️" },
+        { name: "CameraX & Media3", icon: "📷" },
+        { name: "ML Kit Pose Detection", icon: "🧍" },
         { name: "Flutter", icon: "💙" },
         { name: "Expo / React Native", icon: "📲" },
         { name: "Android (Java)", icon: "🤖" },
