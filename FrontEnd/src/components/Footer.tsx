@@ -37,9 +37,9 @@ const Footer = () => {
                 isDarkMode ? "text-gray-400" : "text-gray-600"
               }`}
             >
-              Software Engineering Student
+              Junior Software Engineer @ Deep Mind Labs
               <br />
-              SUST, Sylhet, Bangladesh
+              Software Engineering student, SUST, Sylhet
             </p>
           </div>
 
@@ -141,6 +141,26 @@ const Footer = () => {
                 Experience
               </Link>
               <Link
+                href="/achievements"
+                className={`block text-sm transition-colors ${
+                  isDarkMode
+                    ? "text-gray-400 hover:text-white"
+                    : "text-gray-600 hover:text-black"
+                }`}
+              >
+                Achievements
+              </Link>
+              <Link
+                href="/certificates"
+                className={`block text-sm transition-colors ${
+                  isDarkMode
+                    ? "text-gray-400 hover:text-white"
+                    : "text-gray-600 hover:text-black"
+                }`}
+              >
+                Certificates
+              </Link>
+              <Link
                 href="/contact"
                 className={`block text-sm transition-colors ${
                   isDarkMode
@@ -235,7 +255,7 @@ const Footer = () => {
               isDarkMode ? "text-gray-400" : "text-gray-600"
             }`}
           >
-            © 2025 Md. Meraj Mridha. All rights reserved.
+            © {new Date().getFullYear()} Md. Meraj Mridha. All rights reserved.
           </p>
           <p
             className={`text-sm mt-2 md:mt-0 ${

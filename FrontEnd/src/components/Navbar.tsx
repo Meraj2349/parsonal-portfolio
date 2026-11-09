@@ -33,9 +33,10 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Education", href: "/education" },
-    {name: "Achievements",href:"/achievements"},
-    { name: "Skills", href: "/skills" },
+    { name: "Experience", href: "/experience" },
     { name: "Projects", href: "/projects" },
+    { name: "Skills", href: "/skills" },
+    { name: "Achievements", href: "/achievements" },
     { name: "Certificates", href: "/certificates" },
     { name: "Contact", href: "/contact" },
   ];
@@ -82,8 +83,8 @@ const Navbar = () => {
                         ? "text-blue-400"
                         : "text-blue-600"
                       : isDarkMode
-                      ? "text-gray-300 hover:text-white"
-                      : "text-gray-600 hover:text-black"
+                        ? "text-gray-300 hover:text-white"
+                        : "text-gray-600 hover:text-black"
                   }`}
                 >
                   {item.name}
@@ -269,8 +270,8 @@ const Navbar = () => {
                           ? "text-blue-400 bg-blue-900/20"
                           : "text-blue-600 bg-blue-50"
                         : isDarkMode
-                        ? "text-gray-300 hover:text-white hover:bg-gray-800/50"
-                        : "text-gray-600 hover:text-black hover:bg-gray-100/50"
+                          ? "text-gray-300 hover:text-white hover:bg-gray-800/50"
+                          : "text-gray-600 hover:text-black hover:bg-gray-100/50"
                     }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >

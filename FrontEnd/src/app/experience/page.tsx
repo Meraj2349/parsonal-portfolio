@@ -7,11 +7,39 @@ export default function Experience() {
 
   const experiences = [
     {
-      title: "Software Engineer Intern",
+      title: "Junior Software Engineer",
+      company: "Deep Mind Labs",
+      location: "Bangladesh",
+      period: "Nov 2025 - Present",
+      type: "Full-time",
+      description:
+        "Building production Next.js and React frontends for healthcare, visa-processing and fintech products on a multi-tenant platform. Main contributor on the Doctor Portal's patient assessment and reporting features.",
+      responsibilities: [
+        "Doctor Portal: built range-of-motion (ROM) assessment reports with initial vs follow-up comparisons, charts and interactive front/back body-map pain charts",
+        "Implemented queue-based report generation and download, report rescoring, and doctor flows to skip, reset and bulk-manage ROM exercises",
+        "Worked on appointment scheduling, follow-up invitations and tenant-specific feature settings in the Doctor Portal",
+        "UVP (visa processing): built login and registration with email OTP, password reset, token refresh, the multi-step application wizard with document upload, and the customer dashboard",
+        "Contributed fixes to the Healthcare back office, Bank QR back office and POLAR monitoring dashboard",
+      ],
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Refine",
+        "Ant Design",
+        "Redux Toolkit",
+        "TanStack Query",
+        "Recharts",
+        "Docker",
+      ],
+      companyLogo: "/api/placeholder/80/80",
+    },
+    {
+      title: "Academic Projects",
       company: "SUST Software Engineering Department",
       location: "Sylhet, Bangladesh",
       period: "Jan 2024 - Present",
-      type: "Academic Project",
+      type: "Academic",
       description:
         "Working on various software engineering projects as part of the undergraduate program. Focusing on full-stack development, database management, and software design patterns while collaborating with peers on complex technical challenges.",
       responsibilities: [
@@ -65,7 +93,7 @@ export default function Experience() {
       period: "Jan 2022 - Present",
       type: "Self-Development",
       description:
-        "Active participant in competitive programming contests across multiple platforms. Solved 500+ problems focusing on data structures, algorithms, and problem-solving techniques. Regular contributor to coding communities and peer learning.",
+        "Active participant in competitive programming contests across multiple platforms. Solved 400+ problems focusing on data structures, algorithms, and problem-solving techniques. Regular contributor to coding communities and peer learning.",
       responsibilities: [
         "Solved algorithmic problems on LeetCode, Codeforces, and CodeChef",
         "Participated in weekly programming contests and hackathons",
@@ -118,7 +146,11 @@ export default function Experience() {
             {experiences.map((exp, index) => (
               <div key={index} className="relative">
                 {/* Timeline Dot */}
-                <div className="absolute left-6 w-4 h-4 bg-blue-500 rounded-full border-4 border-black hidden md:block"></div>
+                <div
+                  className={`absolute left-6 w-4 h-4 bg-blue-500 rounded-full border-4 ${
+                    isDarkMode ? "border-black" : "border-white"
+                  } hidden md:block`}
+                ></div>
 
                 {/* Experience Card */}
                 <div
@@ -175,7 +207,13 @@ export default function Experience() {
                           </svg>
                           {exp.location}
                         </div>
-                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-900/50 text-blue-300 border border-blue-800/50">
+                        <span
+                          className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border ${
+                            isDarkMode
+                              ? "bg-blue-900/50 text-blue-300 border-blue-800/50"
+                              : "bg-blue-100 text-blue-700 border-blue-200"
+                          }`}
+                        >
                           {exp.type}
                         </span>
                       </div>
@@ -261,7 +299,7 @@ export default function Experience() {
                                   {responsibility}
                                 </span>
                               </li>
-                            )
+                            ),
                           )}
                         </ul>
                       </div>
