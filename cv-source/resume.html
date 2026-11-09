@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Md. Meraj Mridha - Resume</title>
+<style>
+  @page { size: A4; margin: 11mm 12mm 10mm 12mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Roboto", "Liberation Sans", sans-serif; font-size: 8.9pt; line-height: 1.32; color: #111; }
+  a { color: #0b4fa8; text-decoration: underline; }
+  h1 { font-size: 21pt; font-weight: 700; letter-spacing: 0.2px; margin-bottom: 4px; }
+  .contact { display: flex; flex-wrap: wrap; gap: 2px 22px; font-size: 8.9pt; margin-bottom: 2px; }
+  .contact span::before { content: "▪ "; color: #8a3b12; }
+  h2 { font-size: 10.6pt; font-weight: 700; margin-top: 7px; padding-bottom: 1px; border-bottom: 1.4px solid #8a3b12; margin-bottom: 3px; }
+  .row { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+  .row .r { white-space: nowrap; text-align: right; }
+  .item { margin-top: 3px; }
+  .title { font-weight: 700; }
+  .tech { font-style: italic; color: #333; }
+  ul { margin: 1px 0 0 14px; }
+  li { margin: 0.5px 0; }
+  .skills div { margin: 0.5px 0; }
+  .skills b { font-weight: 700; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
+  .muted { color: #444; }
+  .summary { margin-top: 3px; }
+</style>
+</head>
+<body>
+
+<h1>Md. Meraj Mridha</h1>
+<div class="contact">
+  <span><a href="mailto:mdmerajmridha34@gmail.com">mdmerajmridha34@gmail.com</a></span>
+  <span><a href="tel:+8801997588476">+8801997588476</a></span>
+  <span>Sylhet, Bangladesh</span>
+  <span><a href="https://www.linkedin.com/in/md-meraj-mridha/">LinkedIn</a></span>
+  <span><a href="https://github.com/Meraj2349">GitHub</a></span>
+  <span><a href="https://merajmridha.xyz">merajmridha.xyz</a></span>
+</div>
+<div class="summary">Junior Software Engineer at Deep Mind Labs and Software Engineering student at SUST. Full-stack developer building production web apps with Next.js, React and TypeScript, and personal products with .NET, Kotlin and PostgreSQL.</div>
+
+<h2>Experience</h2>
+<div class="item">
+  <div class="row"><div><span class="title">Deep Mind Labs</span>, Junior Software Engineer</div><div class="r">Nov 2025 – Present</div></div>
+  <ul>
+    <li><b>Doctor Portal</b> (healthcare, multi-tenant): main contributor on patient assessment and reporting. Built range-of-motion reports with initial vs follow-up comparisons and charts, and interactive front/back body-map pain charts.</li>
+    <li>Implemented queue-based report generation and download, report rescoring, doctor flows to skip, reset and bulk-manage exercises, and appointment and follow-up invitation features.</li>
+    <li><b>UVP</b> (visa processing): built the customer web app's sign-in (email OTP, password reset, token refresh), a multi-step application wizard with document upload, and the order dashboard.</li>
+    <li class="muted">Next.js, React, TypeScript, Refine, Ant Design, Redux Toolkit, TanStack Query, Recharts, Docker</li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<div class="row"><div><span class="title">Shahjalal University of Science &amp; Technology (SUST)</span>, B.Sc. in Software Engineering</div><div class="r">2022 – Present, Sylhet</div></div>
+
+<h2>Skills</h2>
+<div class="skills">
+  <div><b>Languages:</b> TypeScript, JavaScript, C#, Kotlin, Python, Java, C++, C, SQL</div>
+  <div><b>Frontend:</b> React, Next.js, Tailwind CSS, Redux Toolkit, TanStack Query, Refine, Ant Design</div>
+  <div><b>Backend &amp; Mobile:</b> ASP.NET Core (.NET), Node.js, Express, Spring Boot, SignalR, Hangfire; Kotlin + Jetpack Compose, Flutter</div>
+  <div><b>Data &amp; DevOps:</b> PostgreSQL + PostGIS, Redis, MongoDB, MySQL, Firebase, Prisma, EF Core; Docker, GitHub Actions, AWS, Git</div>
+  <div><b>Concepts:</b> OOP, Design Patterns, Data Structures &amp; Algorithms, Multi-tenant architecture, Test-driven development</div>
+</div>
+
+<h2>Projects</h2>
+<div class="item">
+  <div class="row"><div><span class="title">SOS Emergency Bangladesh</span>, <span class="tech">.NET 8, PostgreSQL + PostGIS, SignalR, Next.js, Kotlin</span></div><div class="r muted">private repo</div></div>
+  <ul><li>Emergency platform connecting people with nearby mechanics, ambulances and fire services: one-tap SOS with GPS, live location and chat over SignalR, PostGIS nearby search, OTP + JWT auth, bilingual web and Android apps.</li></ul>
+</div>
+<div class="item">
+  <div class="row"><div><span class="title">FarmAI</span>, <span class="tech">.NET 10, PostgreSQL, Hangfire, Gemini, Next.js, Kotlin</span></div><div class="r"><a href="https://farm-ai-fz.vercel.app">prototype</a></div></div>
+  <ul><li>AI crop-disease diagnosis that turns a photo into a basket of real, priced treatment products. Built the modular-monolith API, a staff and vendor panel, and a farmer app with a marketplace and Bangla voice weather alerts; test-driven with CI.</li></ul>
+</div>
+<div class="item">
+  <div class="row"><div><span class="title">Turf Booking SaaS</span>, <span class="tech">.NET 10, PostgreSQL (RLS), Redis, SignalR, Hangfire, Next.js</span></div><div class="r muted">private repo</div></div>
+  <ul><li>Multi-tenant booking platform for football turfs: database-level double-booking guard, bKash payments with reconciliation and refunds, owner dashboard with cash close and audit log, SMS confirmations, platform billing.</li></ul>
+</div>
+<div class="item">
+  <div class="row"><div><span class="title">Sebika</span>, <span class="tech">Node.js, Prisma, PostgreSQL, React, Kotlin, AWS, Terraform</span></div><div class="r muted">private repo</div></div>
+  <ul><li>Bangla-first Android medicine reminder that reads prescriptions with AI; per-tenant data isolation, audit log, admin dashboard with Cognito sign-in, and AWS staging deployed through GitHub Actions.</li></ul>
+</div>
+<div class="item">
+  <div class="row"><div><span class="title">Gold.bd</span> (client project, hakaluki.dev), <span class="tech">Next.js, Express, PostgreSQL, Flutter</span></div><div class="r"></div></div>
+  <ul><li>Gold shop and digital gold wallet on web and mobile: buy and sell gold with payouts, wallet withdrawals, bKash and Nagad checkout, delivery tracking, and several app releases.</li></ul>
+</div>
+<div class="item">
+  <div class="row"><div><span class="title">SkillMate AI Platform</span>, <span class="tech">Spring Boot, MongoDB, React, FastAPI, Gemini</span></div><div class="r"><a href="https://github.com/Meraj2349/ai_powered_content_platform">github</a></div></div>
+  <ul><li>AI learning platform (built with a teammate) that generates study material from video content, with WebSocket updates.</li></ul>
+</div>
+<div class="item">
+  <b>Earlier:</b>
+  <a href="https://github.com/Meraj2349/SchoolProject">SmartSchool</a> (React, Express, MySQL) ·
+  <a href="https://github.com/Meraj2349/arces_2024">ICERIE 2025 website</a> (Next.js, team) ·
+  <a href="https://github.com/Meraj2349/Library_Management_App">Library Management App</a> (Android, Firebase)
+</div>
+
+<h2>Competitions and Research</h2>
+<div class="two">
+  <ul>
+    <li><a href="https://github.com/Meraj2349/BdSL_Bangla-Sign_Language">BdSL Bangla Sign Language</a>: feature extraction and SVM/LSTM models</li>
+    <li>Astrobee Kibo Robot Programming Challenge: autonomous robot programming in Java</li>
+    <li>NASA Space Apps Challenge Bangladesh 2024: selected participant</li>
+  </ul>
+  <ul>
+    <li><a href="https://www.linkedin.com/posts/md-meraj-mridha_excitingnews-greengeeksquad-innovation-activity-7255948292147027968-PjwB">UIHP Farm AI Project</a>: 2nd Runner-up</li>
+    <li>Therap Javafest 2025: qualified participant</li>
+    <li><a href="https://www.linkedin.com/posts/md-meraj-mridha_python-datascience-skilldevelopment-activity-7360763856488443906-DL9j">EDGE Data Science</a>: certified trainee (80 hours)</li>
+  </ul>
+</div>
+
+<h2>Problem Solving</h2>
+<div class="row"><div>Solved 400+ problems using C/C++ on LeetCode, Codeforces, CodeChef and VJudge; regular DSA practice.</div><div class="r"><a href="https://codeforces.com/profile/merajislam2349">Codeforces</a> · <a href="https://leetcode.com/u/merajislam2349/">LeetCode</a></div></div>
+
+<h2>Organizations</h2>
+<div class="row"><div><a href="https://www.facebook.com/cfssust">Chokh Film Society (CFS)</a>, Vice President</div><div class="r">Aug 2025 – Present</div></div>
+<div class="row"><div><a href="http://facebook.com/tangailsustian">Tangail Students' Association of SUST</a>, General Secretary</div><div class="r">May 2023 – Nov 2024</div></div>
+<div class="row"><div><a href="http://uihp.org/campus-ambassador">University Innovation Hub Program (UIHP)</a>, Campus Ambassador</div><div class="r">Nov 2022 – Present</div></div>
+
+</body>
+</html>
