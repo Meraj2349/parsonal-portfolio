@@ -27,6 +27,24 @@ export default function Projects() {
       featured: true,
     },
     {
+      title: "SOS Emergency Bangladesh",
+      description:
+        "Designed and built an emergency response platform that connects people in Bangladesh with nearby mechanics, ambulances and fire services. One-tap SOS with GPS, live location and chat over SignalR, PostGIS nearby-provider search, OTP + JWT auth, and bilingual (Bangla/English) web and Android apps for customers, providers, operators and admins.",
+      technologies: [
+        ".NET 8",
+        "PostgreSQL + PostGIS",
+        "SignalR",
+        "Next.js",
+        "Kotlin",
+        "Jetpack Compose",
+      ],
+      // Private repo, no public demo yet, so buttons are hidden
+      github: "",
+      demo: "",
+      image: "/api/placeholder/600/300",
+      featured: true,
+    },
+    {
       title: "SmartSchool",
       description:
         "Developed a full-stack school management system using React.js, Express.js, and MySQL. Designed and built an admin panel to manage student/teacher information, track attendance and results, and handle online admissions. Implemented an interactive learning platform and event management.",
