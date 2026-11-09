@@ -29,7 +29,7 @@ export default function Certificates() {
       image: "/images/certificate/INternationalConference.jpeg",
     },
     {
-      title: "Nactar Robotics Olympiad 2022",
+      title: "NACTAR Robotics Olympiad 2022",
       issuer: "NACTAR & Robo Tech Valley",
       date: "2022",
       description:
@@ -42,25 +42,22 @@ export default function Certificates() {
 
   const achievements = [
     {
-      title: "Hackathon Winner",
-      event: "University Tech Fest 2024",
-      description:
-        "First place in web development category for building an innovative e-learning platform",
+      title: "Winner (Green Geek Squad)",
+      event: "UIHP Innovation Hub Program 2024",
+      description: "Won 40,000 BDT at SUST TC2.",
       date: "2024",
     },
     {
-      title: "Open Source Contributor",
-      event: "Hacktoberfest 2023",
-      description:
-        "Successfully contributed to 8+ open source projects during Hacktoberfest",
-      date: "2023",
+      title: "Selected Participant",
+      event: "NASA Space Apps Challenge Bangladesh 2024",
+      description: "Selected to take part in the NASA Space Apps Challenge.",
+      date: "2024",
     },
     {
-      title: "Coding Competition",
-      event: "CodeChef Monthly Challenge",
-      description:
-        "Ranked in top 10% participants in multiple monthly coding challenges",
-      date: "2023",
+      title: "Qualified Participant",
+      event: "Therap Javafest 2025",
+      description: "Qualified for Therap Javafest 2025.",
+      date: "2025",
     },
   ];
 
@@ -280,7 +277,7 @@ export default function Certificates() {
         </div>
 
         {/* Stats */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mt-20 grid grid-cols-2 gap-8 max-w-md mx-auto">
           <div className="text-center">
             <div
               className={`text-3xl font-bold mb-2 ${
@@ -311,38 +308,6 @@ export default function Certificates() {
               }`}
             >
               Achievements
-            </div>
-          </div>
-          <div className="text-center">
-            <div
-              className={`text-3xl font-bold mb-2 ${
-                isDarkMode ? "text-white" : "text-gray-900"
-              }`}
-            >
-              15+
-            </div>
-            <div
-              className={`text-sm ${
-                isDarkMode ? "text-gray-400" : "text-gray-600"
-              }`}
-            >
-              Skills Verified
-            </div>
-          </div>
-          <div className="text-center">
-            <div
-              className={`text-3xl font-bold mb-2 ${
-                isDarkMode ? "text-white" : "text-gray-900"
-              }`}
-            >
-              100%
-            </div>
-            <div
-              className={`text-sm ${
-                isDarkMode ? "text-gray-400" : "text-gray-600"
-              }`}
-            >
-              Completion Rate
             </div>
           </div>
         </div>

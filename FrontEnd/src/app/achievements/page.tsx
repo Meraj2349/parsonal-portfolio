@@ -84,7 +84,7 @@ const Achievements: React.FC = () => {
               )}
               <div className="flex-1">
                 <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">
-                  {item.link ? (
+                  {item.link && item.link !== "#" ? (
                     <a
                       href={item.link}
                       className="text-blue-600 dark:text-blue-400 hover:underline"

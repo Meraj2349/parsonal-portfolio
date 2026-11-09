@@ -266,29 +266,31 @@ export default function Education() {
                   </div>
 
                   {/* View Result Button */}
-                  <Link
-                    href={edu.resultLink}
-                    className={`inline-flex items-center px-4 py-2 rounded-lg transition-colors duration-200 text-sm ${
-                      isDarkMode
-                        ? "bg-gray-800 text-gray-300 hover:bg-gray-700"
-                        : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                    }`}
-                  >
-                    <svg
-                      className="w-4 h-4 mr-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                  {edu.resultLink && edu.resultLink !== "#" && (
+                    <Link
+                      href={edu.resultLink}
+                      className={`inline-flex items-center px-4 py-2 rounded-lg transition-colors duration-200 text-sm ${
+                        isDarkMode
+                          ? "bg-gray-800 text-gray-300 hover:bg-gray-700"
+                          : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                      }`}
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      />
-                    </svg>
-                    View Result
-                  </Link>
+                      <svg
+                        className="w-4 h-4 mr-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
+                      View Result
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
@@ -304,45 +306,7 @@ export default function Education() {
           >
             Academic Achievements
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div
-              className={`rounded-xl p-6 text-center border ${
-                isDarkMode
-                  ? "bg-gray-900/30 border-gray-800/30"
-                  : "bg-white border-gray-200 shadow-lg"
-              }`}
-            >
-              <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <h3
-                className={`text-xl font-semibold mb-2 ${
-                  isDarkMode ? "text-white" : "text-gray-900"
-                }`}
-              >
-                Dean&apos;s List
-              </h3>
-              <p
-                className={`text-sm ${
-                  isDarkMode ? "text-gray-400" : "text-gray-600"
-                }`}
-              >
-                Consistent academic excellence throughout the program
-              </p>
-            </div>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div
               className={`rounded-xl p-6 text-center border ${
                 isDarkMode
@@ -377,7 +341,8 @@ export default function Education() {
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 }`}
               >
-                Multiple projects in AI, ML, and software development
+                Thesis on Bangla–English code-mixing attacks on LLMs, plus
+                projects in AI, ML and sign-language recognition
               </p>
             </div>
 
