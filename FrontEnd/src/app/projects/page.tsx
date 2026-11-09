@@ -20,6 +20,16 @@ export default function Projects() {
       featured: true,
     },
     {
+      title: "UVP - Universal Visa Processing",
+      description:
+        "Customer web app (Deep Mind Labs) where people apply for visas and background checks online. Backend-for-Frontend on Next.js API routes with OAuth and tenant headers, a multi-step application wizard with document upload and saved progress, a customer dashboard for tracking orders, and Stripe-backed subscription packages.",
+      technologies: ["Next.js 16", "React 19", "TypeScript", "Redux Toolkit", "TanStack Query", "Tailwind CSS 4", "Framer Motion", "Stripe", "OAuth 2.0", "Docker"],
+      github: "",
+      demo: "",
+      image: "/api/placeholder/600/300",
+      featured: true,
+    },
+    {
       title: "FarmAI Platform",
       description:
         "AI crop disease diagnosis to treatment marketplace. Farmers scan a leaf, Gemini diagnoses the disease, and the app builds a basket of real, priced treatment products to order with cash on delivery, plus expert consultations and drone service booking. Built test-first with CI, ADRs and a .NET 10 modular monolith.",

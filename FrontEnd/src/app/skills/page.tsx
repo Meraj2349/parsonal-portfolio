@@ -48,6 +48,10 @@ function SkillsPage() {
         { name: "Bootstrap", icon: "🅱️" },
         { name: "Ant Design", icon: "🐜" },
         { name: "TanStack Query", icon: "🔄" },
+        { name: "Redux Toolkit", icon: "🟪" },
+        { name: "Framer Motion", icon: "🎞️" },
+        { name: "OAuth 2.0 / BFF pattern", icon: "🔐" },
+        { name: "Stripe", icon: "💳" },
       ],
     },
     {
