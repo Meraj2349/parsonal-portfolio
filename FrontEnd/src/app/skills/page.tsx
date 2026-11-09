@@ -29,6 +29,8 @@ function SkillsPage() {
         { name: "Python", icon: "🐍" },
         { name: "Java", icon: "☕" },
         { name: "C++", icon: "⚡" },
+        { name: "C#", icon: "🟪" },
+        { name: "Kotlin", icon: "🟣" },
         { name: "C", icon: "🔤" },
         { name: "SQL", icon: "🗃️" },
       ],
@@ -42,6 +44,9 @@ function SkillsPage() {
         { name: "HTML5", icon: "📄" },
         { name: "CSS3", icon: "🎨" },
         { name: "Tailwind CSS", icon: "💨" },
+        { name: "Redux Toolkit", icon: "🔁" },
+        { name: "TanStack Query", icon: "📡" },
+        { name: "Refine + Ant Design", icon: "🧱" },
         { name: "Bootstrap", icon: "🅱️" },
       ],
     },
@@ -49,17 +54,31 @@ function SkillsPage() {
       title: "Back-End Development",
       icon: "⚙️",
       skills: [
+        { name: "ASP.NET Core (.NET)", icon: "🟦" },
         { name: "Node.js", icon: "🌐" },
         { name: "Express.js", icon: "🚀" },
+        { name: "Spring Boot", icon: "🌱" },
+        { name: "SignalR", icon: "📶" },
         { name: "Socket.io", icon: "🔌" },
         { name: "REST APIs", icon: "🔗" },
+      ],
+    },
+    {
+      title: "Mobile Development",
+      icon: "📱",
+      skills: [
+        { name: "Kotlin + Jetpack Compose", icon: "🤖" },
+        { name: "Android (Java)", icon: "☕" },
+        { name: "Flutter", icon: "🦋" },
       ],
     },
     {
       title: "Databases",
       icon: "💾",
       skills: [
-        { name: "PostgreSQL", icon: "🐘" },
+        { name: "PostgreSQL + PostGIS", icon: "🐘" },
+        { name: "Redis", icon: "🟥" },
+        { name: "Prisma / EF Core", icon: "🔷" },
         { name: "MongoDB", icon: "🍃" },
         { name: "MySQL", icon: "🐬" },
         { name: "Firebase", icon: "🔥" },
@@ -72,6 +91,8 @@ function SkillsPage() {
         { name: "Git", icon: "📊" },
         { name: "GitHub", icon: "🐱" },
         { name: "Docker", icon: "🐳" },
+        { name: "GitHub Actions", icon: "⚙️" },
+        { name: "AWS", icon: "☁️" },
         { name: "Selenium", icon: "🔧" },
       ],
     },
@@ -110,8 +131,7 @@ function SkillsPage() {
       icon: "💻",
       skills: [
         { name: "Windows", icon: "🪟" },
-        { name: "Ubuntu", icon: "🐧" },
-        { name: "Linux", icon: "🐧" },
+        { name: "Linux (Ubuntu)", icon: "🐧" },
         { name: "Parrot OS", icon: "🦜" },
       ],
     },
@@ -310,7 +330,7 @@ function SkillsPage() {
               }`}
             >
               <div className="text-2xl sm:text-3xl font-bold text-orange-400 mb-2">
-                500+
+                400+
               </div>
               <div
                 className={`text-xs sm:text-sm ${

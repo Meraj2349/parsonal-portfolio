@@ -51,11 +51,11 @@ export default function About() {
                   isDarkMode ? "text-gray-300" : "text-gray-700"
                 }`}
               >
-                Hi! I&apos;m Md. Meraj Mridha, a Software Engineering student at
-                Shahjalal University of Science & Technology (SUST). I am
-                passionate about full stack development, problem solving, and
-                building impactful solutions. My expertise includes JavaScript,
-                Python, React.js, Next.js, Node.js, and modern web technologies.
+                Hi! I&apos;m Md. Meraj Mridha, a Junior Software Engineer at
+                Deep Mind Labs and a Software Engineering student at Shahjalal
+                University of Science &amp; Technology (SUST). I build
+                full-stack products with Next.js, React, TypeScript, .NET and
+                Kotlin, and I enjoy turning real problems into working software.
                 I enjoy collaborating on innovative projects and have
                 contributed to research and competitions in AI, robotics, and
                 software engineering.
@@ -66,12 +66,13 @@ export default function About() {
                   isDarkMode ? "text-gray-300" : "text-gray-700"
                 }`}
               >
-                Currently pursuing my B.Sc. in Software Engineering
-                (2022–present) at SUST, I have developed projects like
-                SmartSchool, ICERIE website, Library Management App, SkillMate
-                AI Platform, and FarmAI. I am also active in student
-                organizations and have solved 400+ problems on platforms like
-                LeetCode and Codeforces.
+                At Deep Mind Labs I work on the Doctor Portal and the UVP visa
+                processing platform. On my own I have built SOS Emergency
+                Bangladesh, FarmAI, a turf booking SaaS and Sebika, alongside
+                earlier projects like SmartSchool, the ICERIE website and
+                SkillMate. Alongside my B.Sc. at SUST (2022–present) I am active
+                in student organizations and have solved 400+ problems on
+                platforms like LeetCode and Codeforces.
               </p>
 
               {/* Quick Facts */}
@@ -207,8 +208,8 @@ export default function About() {
                 isDarkMode ? "text-gray-400" : "text-gray-600"
               }`}
             >
-              3+ years of software development with 15+ successful projects and
-              500+ problems solved
+              Junior Software Engineer at Deep Mind Labs since Nov 2025, 15+
+              projects built and 400+ problems solved
             </p>
           </div>
 
@@ -245,7 +246,7 @@ export default function About() {
                 isDarkMode ? "text-gray-400" : "text-gray-600"
               }`}
             >
-              B.Sc. in Software Engineering at SUST (2022-2026) with focus on
+              B.Sc. in Software Engineering at SUST (2022–present) with focus on
               modern technologies
             </p>
           </div>
@@ -283,7 +284,7 @@ export default function About() {
                 isDarkMode ? "text-gray-400" : "text-gray-600"
               }`}
             >
-              Expert in React, Next.js, Node.js, Android development, and
+              Next.js, React, TypeScript, .NET, Kotlin/Android, PostgreSQL and
               competitive programming
             </p>
           </div>

@@ -16,9 +16,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Md. Meraj Mridha - Software Developer",
+  metadataBase: new URL("https://merajmridha.xyz"),
+  title: "Md. Meraj Mridha - Software Engineer",
   description:
-    "Software Engineering student at SUST specializing in Full Stack Development with expertise in Next.js, React, Node.js and modern Web Technologies.",
+    "Junior Software Engineer at Deep Mind Labs and Software Engineering student at SUST. Full-stack developer working with Next.js, React, TypeScript, .NET and Kotlin.",
+  openGraph: {
+    title: "Md. Meraj Mridha - Software Engineer",
+    description:
+      "Junior Software Engineer at Deep Mind Labs. Full-stack projects in Next.js, React, .NET and Kotlin.",
+    url: "https://merajmridha.xyz",
+    siteName: "Md. Meraj Mridha",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

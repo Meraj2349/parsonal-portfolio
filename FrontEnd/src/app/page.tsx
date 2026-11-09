@@ -48,18 +48,18 @@ export default function Home() {
               isDarkMode ? "text-gray-300" : "text-gray-700"
             }`}
           >
-            B.Sc. in Software Engineering @ SUST | Full Stack Developer
+            Junior Software Engineer @ Deep Mind Labs | Full Stack Developer
           </h2>
           <p
             className={`text-base sm:text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed px-4 ${
               isDarkMode ? "text-gray-400" : "text-gray-600"
             }`}
           >
-            Software Engineering student at Shahjalal University of Science &
-            Technology (SUST), passionate about full stack development, problem
-            solving, and building impactful solutions. Experienced in
-            JavaScript, Python, React.js, Next.js, Node.js, and modern web
-            technologies. Open to collaboration and new opportunities.
+            Junior Software Engineer at Deep Mind Labs and Software Engineering
+            student at Shahjalal University of Science &amp; Technology (SUST).
+            I build full-stack products with Next.js, React, TypeScript, .NET
+            and Kotlin, from healthcare portals to multi-tenant SaaS and AI
+            tools for Bangladesh. Open to collaboration and new opportunities.
           </p>
 
           {/* Action Buttons */}
@@ -145,7 +145,9 @@ export default function Home() {
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                 />
               </svg>
-              <span>+8801997588476</span>
+              <a href="tel:+8801997588476" className="hover:underline">
+                +8801997588476
+              </a>
             </div>
             <div
               className={`flex items-center ${
@@ -210,7 +212,10 @@ export default function Home() {
                 Problems Solved
               </div>
             </div>
-            <div
+            <a
+              href="https://www.linkedin.com/in/md-meraj-mridha/"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`text-center rounded-lg p-4 sm:p-6 border ${
                 isDarkMode
                   ? "bg-gray-900/30 border-gray-800/30"
@@ -242,9 +247,12 @@ export default function Home() {
               >
                 LinkedIn Followers
               </div>
-            </div>
-            <div
-              className={`text-center rounded-lg p-4 sm:p-6 border sm:col-span-1 col-span-1 ${
+            </a>
+            <a
+              href="https://wa.me/8801997588476"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`text-center rounded-lg p-4 sm:p-6 border sm:col-span-1 col-span-1 block transition-colors hover:border-blue-500/50 ${
                 isDarkMode
                   ? "bg-gray-900/30 border-gray-800/30"
                   : "bg-gray-100/30 border-gray-200/30"
@@ -275,7 +283,7 @@ export default function Home() {
               >
                 WhatsApp Me
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
