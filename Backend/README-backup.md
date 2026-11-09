@@ -11,16 +11,16 @@
 
 <!-- 🌟 MAIN PORTFOLIO BUTTON - HIGHLIGHTED 🌟 -->
 <div style="margin: 30px 0;">
-  <a href="https://parsonal-portfolio-iqqxyr42g-meraj2349s-projects.vercel.app" target="_blank">
+  <a href="https://merajmridha.xyz" target="_blank">
     <img src="https://img.shields.io/badge/🚀_VIEW_MY_LIVE_PORTFOLIO-Click_Here-FF6B6B?style=for-the-badge&logoColor=white&labelColor=4ECDC4&color=FF6B6B" alt="Live Portfolio" height="60"/>
   </a>
 </div>
 
 <p>
-  <a href="https://parsonal-portfolio-iqqxyr42g-meraj2349s-projects.vercel.app" target="_blank">
+  <a href="https://merajmridha.xyz" target="_blank">
     <img src="https://img.shields.io/badge/🌐_Portfolio-Live_Demo-4A90E2?style=for-the-badge&logoColor=white" alt="Portfolio"/>
   </a>
-  <a href="https://parsonal-portfolio-iqqxyr42g-meraj2349s-projects.vercel.app/CV/Md%20Meraj%20Mridha-Resume.pdf" target="_blank">
+  <a href="https://merajmridha.xyz/CV/Md%20Meraj%20Mridha-Resume.pdf" target="_blank">
     <img src="https://img.shields.io/badge/📄_Resume-Download-red?style=for-the-badge&logoColor=white" alt="Resume"/>
   </a>
 </p>
@@ -81,7 +81,7 @@
 </p>
 
 <p align="center">
-  <a href="https://parsonal-portfolio-iqqxyr42g-meraj2349s-projects.vercel.app" target="_blank">
+  <a href="https://merajmridha.xyz" target="_blank">
     <img src="https://img.shields.io/badge/🌐_Portfolio-Live_Demo-4A90E2?style=for-the-badge&logoColor=white" alt="Portfolio"/>
   </a>
   <a href="/CV/Md Meraj Mridha-Resume.pdf" target="_blank">
@@ -167,7 +167,7 @@ Here are some ideas to get you started:
 <td width="50%">
 <h3 align="center">🌐 Personal Portfolio</h3>
 <div align="center">  
-<a href="https://parsonal-portfolio-iqqxyr42g-meraj2349s-projects.vercel.app" target="_blank"><img src="https://img.shields.io/badge/🔗_Live_Demo-4A90E2?style=for-the-badge&logoColor=white" alt="Live Demo"/></a>
+<a href="https://merajmridha.xyz" target="_blank"><img src="https://img.shields.io/badge/🔗_Live_Demo-4A90E2?style=for-the-badge&logoColor=white" alt="Live Demo"/></a>
 <br><br>
 <p><strong>Next.js • TypeScript • Tailwind CSS</strong></p>
 <p>Modern responsive portfolio with dark/light themes, contact form, and optimized performance.</p>
@@ -196,7 +196,7 @@ Here are some ideas to get you started:
 <td width="50%">
 <h3 align="center">📚 More Projects</h3>
 <div align="center">
-<a href="https://parsonal-portfolio-iqqxyr42g-meraj2349s-projects.vercel.app/projects" target="_blank"><img src="https://img.shields.io/badge/🔗_View_All-purple?style=for-the-badge&logoColor=white" alt="View All"/></a>
+<a href="https://merajmridha.xyz/projects" target="_blank"><img src="https://img.shields.io/badge/🔗_View_All-purple?style=for-the-badge&logoColor=white" alt="View All"/></a>
 <br><br>
 <p><strong>Various Technologies</strong></p>
 <p>Check out my portfolio for more projects and detailed case studies.</p>
@@ -234,7 +234,7 @@ Here are some ideas to get you started:
 ### 🔗 Connect With Me
 
 <p align="center">
-  <a href="https://linkedin.com/in/your-link"><img src="https://img.shields.io/badge/LinkedIn-red?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/in/md-meraj-mridha/"><img src="https://img.shields.io/badge/LinkedIn-red?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://github.com/Meraj2349"><img src="https://img.shields.io/badge/GitHub-red?style=for-the-badge&logo=github&logoColor=white"/></a>
   <a href="https://youtube.com/@nexgenprogramming"><img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white"/></a>
 </p>

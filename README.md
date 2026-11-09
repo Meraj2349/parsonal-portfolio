@@ -4,18 +4,19 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 
 ## 🌐 Live Demo
 
-**🔗 [View Live Portfolio](https://parsonal-portfolio-iqqxyr42g-meraj2349s-projects.vercel.app)**
+**🔗 [View Live Portfolio](https://merajmridha.xyz)**
 
 ## 👨‍💻 About Me
 
-Software Engineering student at SUST specializing in Full Stack Development with expertise in JavaScript, TypeScript, Next.js, and modern web technologies.
+Junior Software Engineer at Deep Mind Labs and Software Engineering student at SUST. Full-stack developer working with Next.js, React, TypeScript, .NET and Kotlin.
 
 ## ✨ Features
 
 - 🌙 **Dark/Light Theme** - Toggle between themes
 - 📱 **Responsive Design** - Works on all devices
-- 📧 **Contact Form** - Direct email functionality
-- 🎓 **Education Section** - Academic achievements
+- 📧 **Contact Form** - Sends email through Gmail (Nodemailer), with a mailto fallback
+- 🎓 **Education Section** - Academic background
+- 🏅 **Achievements** - Competitions and research
 - 💼 **Projects Showcase** - Featured work and projects
 - 🏆 **Skills & Certificates** - Technical expertise display
 - 📄 **CV Download** - Downloadable resume
@@ -23,7 +24,7 @@ Software Engineering student at SUST specializing in Full Stack Development with
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 15.4.4
+- **Framework**: Next.js 15.5
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Deployment**: Vercel
@@ -65,7 +66,7 @@ FrontEnd/
    ```
 
 3. **Set up environment variables**
-   Create `.env.local` file:
+   Create `FrontEnd/.env.local` (never commit it, and never put these in `vercel.json`):
 
    ```env
    EMAIL_USER=your_email@gmail.com
@@ -89,11 +90,12 @@ To enable the contact form functionality:
 2. Generate an App Password:
    - Go to [myaccount.google.com](https://myaccount.google.com) → Security
    - App passwords → Mail → Other → "Portfolio Contact"
-3. Add the credentials to your environment variables
+3. Add `EMAIL_USER` and `EMAIL_PASS` to `.env.local` locally, and in Vercel under Settings → Environment Variables
+4. Without them, the form opens the visitor's email app instead
 
 ## 🌐 Deployment
 
-This project is deployed on Vercel with automatic deployments from the `master` branch.
+This project is deployed on Vercel at [merajmridha.xyz](https://merajmridha.xyz) with automatic deployments from the `master` branch. The Vercel project's Root Directory must be `FrontEnd`.
 
 ### Deploy Your Own
 
@@ -104,8 +106,9 @@ This project is deployed on Vercel with automatic deployments from the `master` 
 - **Home** - Hero section with introduction
 - **About** - Detailed background and experience
 - **Skills** - Technical skills and proficiencies
-- **Education** - Academic background and achievements
-- **Experience** - Work experience and internships
+- **Education** - Academic background
+- **Experience** - Work experience, including Deep Mind Labs
+- **Achievements** - Competitions and research
 - **Projects** - Portfolio of completed projects
 - **Certificates** - Professional certifications
 - **Contact** - Contact form and information
@@ -117,11 +120,11 @@ The portfolio includes a custom theme context that provides:
 - Dark and light mode toggle
 - Persistent theme selection
 - Smooth transitions between themes
-- System preference detection
+- Dark by default
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License.
 
 ## 🤝 Contributing
 
@@ -130,7 +133,7 @@ Contributions, issues, and feature requests are welcome!
 ## 📞 Contact
 
 - **Email**: mdmerajmridha34@gmail.com
-- **LinkedIn**: [Md. Meraj Mridha](https://linkedin.com/in/your-profile)
+- **LinkedIn**: [Md. Meraj Mridha](https://www.linkedin.com/in/md-meraj-mridha/)
 - **GitHub**: [@Meraj2349](https://github.com/Meraj2349)
 
 ---
