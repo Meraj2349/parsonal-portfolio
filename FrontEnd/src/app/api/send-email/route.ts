@@ -1,67 +1,69 @@
 import { NextRequest, NextResponse } from "next/server";
+import nodemailer from "nodemailer";
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+// Strip line breaks so user input can't add extra mail headers
+const oneLine = (value: string) => value.replace(/[\r\n]+/g, " ").trim();
 
 export async function POST(request: NextRequest) {
+  const user = process.env.EMAIL_USER;
+  const pass = process.env.EMAIL_PASS;
+
+  // Without credentials the contact page falls back to opening a mailto link
+  if (!user || !pass) {
+    return NextResponse.json(
+      { error: "Email service is not configured" },
+      { status: 503 }
+    );
+  }
+
   try {
     const { from_name, from_email, subject, message } = await request.json();
 
-    // Basic validation
-    if (!from_name || !from_email || !message) {
+    if (
+      typeof from_name !== "string" ||
+      typeof from_email !== "string" ||
+      typeof message !== "string" ||
+      !from_name.trim() ||
+      !message.trim() ||
+      !EMAIL_RE.test(from_email)
+    ) {
       return NextResponse.json(
-        { error: "Missing required fields" },
+        { error: "Missing or invalid fields" },
         { status: 400 }
       );
     }
 
-    // Create formatted email content
-    const emailSubject = subject || `New message from ${from_name}`;
-    const emailBody = `Hello Meraj,
+    const name = oneLine(from_name).slice(0, 100);
+    const replyTo = oneLine(from_email).slice(0, 200);
+    const emailSubject = oneLine(
+      typeof subject === "string" && subject.trim()
+        ? subject
+        : `New message from ${name}`
+    ).slice(0, 200);
 
-You have received a new message from your portfolio contact form:
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: { user, pass },
+    });
 
-Name: ${from_name}
-Email: ${from_email}
-Subject: ${emailSubject}
+    await transporter.sendMail({
+      from: `"Portfolio Contact" <${user}>`,
+      to: user,
+      replyTo: `"${name.replace(/"/g, "")}" <${replyTo}>`,
+      subject: `[Portfolio] ${emailSubject}`,
+      text: `Name: ${name}\nEmail: ${replyTo}\n\n${message.slice(0, 5000)}`,
+    });
 
-Message:
-${message}
-
----
-This message was sent from your portfolio contact form.
-You can reply directly to: ${from_email}`;
-
-    // Log the message for development (you'll see this in your terminal)
-    console.log("\n📧 NEW CONTACT FORM MESSAGE 📧");
-    console.log("================================");
-    console.log(`From: ${from_name} <${from_email}>`);
-    console.log(`Subject: ${emailSubject}`);
-    console.log(`Time: ${new Date().toLocaleString()}`);
-    console.log("\nMessage:");
-    console.log(message);
-    console.log("================================\n");
-
-    // Create mailto URL that opens user's default email client
-    const mailtoUrl = `mailto:mdmerajmridha34@gmail.com?subject=${encodeURIComponent(
-      emailSubject
-    )}&body=${encodeURIComponent(emailBody)}`;
-
-    // Return success with mailto option
-    return NextResponse.json(
-      {
-        message:
-          "Message received successfully! Check your terminal for details.",
-        mailtoUrl: mailtoUrl,
-        sender: {
-          name: from_name,
-          email: from_email,
-          subject: emailSubject,
-        },
-      },
-      { status: 200 }
-    );
+    return NextResponse.json({ message: "Message sent" }, { status: 200 });
   } catch (error) {
-    console.error("Error processing contact form:", error);
+    console.error(
+      "Contact form send failed:",
+      error instanceof Error ? error.message : error
+    );
     return NextResponse.json(
-      { error: "Failed to process message" },
+      { error: "Failed to send message" },
       { status: 500 }
     );
   }
