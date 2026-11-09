@@ -9,6 +9,24 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Doctor Portal – Deep Mind Labs",
+      description:
+        "Main contributor on the patient assessment and reporting side of a multi-tenant healthcare portal for clinicians and patients. Built range-of-motion (ROM) reports with initial vs follow-up comparisons and charts, interactive front/back body-map pain charts, queue-based report generation and download, doctor ROM-exercise flows and appointment features.",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Refine",
+        "Ant Design",
+        "Recharts",
+      ],
+      // Company project: private repo, no public demo
+      github: "",
+      demo: "",
+      image: "/api/placeholder/600/300",
+      featured: true,
+    },
+    {
       title: "UVP – Universal Visa Processing",
       description:
         "Built the customer web app for Deep Mind Labs' visa processing platform with Next.js 16, React 19 and TypeScript. Implemented the sign-in flow (email OTP, password reset, token refresh), a multi-step application wizard with document upload, and a customer dashboard for tracking orders, all calling multi-tenant backend services through Next.js API routes.",
@@ -20,7 +38,7 @@ export default function Projects() {
         "Tailwind CSS",
         "Docker",
       ],
-      // Company project: private repo, no public demo, so buttons are hidden
+      // Company project: private repo, no public demo
       github: "",
       demo: "",
       image: "/api/placeholder/600/300",
@@ -38,60 +56,124 @@ export default function Projects() {
         "Kotlin",
         "Jetpack Compose",
       ],
-      // Private repo, no public demo yet, so buttons are hidden
+      // Private repo, no public demo yet
       github: "",
       demo: "",
       image: "/api/placeholder/600/300",
       featured: true,
     },
     {
-      title: "SmartSchool",
+      title: "FarmAI",
       description:
-        "Developed a full-stack school management system using React.js, Express.js, and MySQL. Designed and built an admin panel to manage student/teacher information, track attendance and results, and handle online admissions. Implemented an interactive learning platform and event management.",
-      technologies: ["React.js", "Express.js", "MySQL"],
-      github: "github/repo",
-      demo: "#",
+        "AI crop-disease diagnosis for Bangladeshi farmers: a photo goes through a Gemini pipeline and comes back as a treatment basket of real, priced products the farmer can order. Built the .NET 10 modular-monolith backend, a Next.js staff and vendor panel, and a Kotlin farmer app with OTP sign-in, scan history, a marketplace and Bangla voice weather alerts. Test-driven, with CI.",
+      technologies: [
+        ".NET 10",
+        "PostgreSQL",
+        "Hangfire",
+        "Gemini AI",
+        "Next.js",
+        "Kotlin",
+        "Jetpack Compose",
+      ],
+      // Private repo; the earlier prototype is live
+      github: "",
+      demo: "https://farm-ai-fz.vercel.app",
       image: "/api/placeholder/600/300",
       featured: true,
     },
     {
-      title: "ICERIE website",
+      title: "Turf Booking SaaS",
       description:
-        "Collaborated on the design and development of the ARCES 2024 project using Next.js. Contributed to feature implementation (navbar, homepage, track page), performed bug fixes, and participated in code reviews. Utilized Git for version control and practiced collaborative software development.",
-      technologies: ["Next.js", "Tailwind CSS", "Express.js", "MongoDB"],
-      github: "github/repo",
-      demo: "live demo",
-      image: "/images/project/ICRIEimage.png",
+        "Multi-tenant SaaS that runs football turf bookings for venues across Bangladesh. Built slot booking with a database-level double-booking guard, bKash payments with reconciliation and refunds, phone OTP sign-in, an owner dashboard with cash close and audit log, weekly bookings for regular teams, SMS confirmations, and a platform admin console with subscription billing.",
+      technologies: [
+        ".NET 10",
+        "PostgreSQL (RLS)",
+        "Redis",
+        "SignalR",
+        "Hangfire",
+        "Next.js",
+        "Docker",
+      ],
+      // Private repo, no public demo yet
+      github: "",
+      demo: "",
+      image: "/api/placeholder/600/300",
       featured: true,
     },
     {
-      title: "Library Management App",
+      title: "Sebika – Prescription Reminder",
       description:
-        "Built an Android library application using Java and Firebase. Designed responsive UI layouts with XML. Features include book catalog viewing, advanced search, user authentication, and real-time data synchronization.",
-      technologies: ["Java", "XML", "Firebase"],
-      github: "github/repo",
-      demo: "#",
-      image: "/images/project/libraryImage.png",
+        "Bangla-first Android medicine reminder that reads prescriptions with AI (Gemini on Vertex AI). Node.js API with per-tenant Postgres isolation, an append-only audit log and PHI-safe logging; React admin dashboard with Cognito sign-in; staging on AWS set up with Terraform and GitHub Actions.",
+      technologies: [
+        "Node.js",
+        "Express",
+        "Prisma",
+        "PostgreSQL",
+        "React",
+        "Kotlin",
+        "AWS",
+        "Terraform",
+      ],
+      // Private repo, no public demo yet
+      github: "",
+      demo: "",
+      image: "/api/placeholder/600/300",
       featured: true,
     },
     {
-      title: "SkillMate AI Platform",
+      title: "Gold.bd – Digital Gold",
       description:
-        "AI-Enhanced Learning Management System—Created an intelligent educational platform featuring automated content generation using Spring Boot and MongoDB. Implemented performance-optimized database architecture with text search, compound indexing, and real-time metrics serving educational content with AI-powered recommendations.",
-      technologies: ["React.js", "Spring Boot", "Firebase", "MongoDB"],
-      github: "github/repo",
-      demo: "#",
+        "Client project with the hakaluki.dev team: a gold shop and digital gold wallet on web and mobile. Built buying and selling gold with payouts, wallet withdrawals, bKash and Nagad checkout, delivery tracking for bars and coins, forgot-password, and several releases of the Flutter app.",
+      technologies: [
+        "Next.js",
+        "Tailwind CSS",
+        "Express",
+        "PostgreSQL",
+        "Flutter",
+      ],
+      github: "",
+      demo: "",
       image: "/api/placeholder/600/300",
       featured: false,
     },
     {
-      title: "FarmAI",
+      title: "SkillMate AI Platform",
       description:
-        "Developed a comprehensive farm management system using Next.js, featuring scientific cultivation methods, expert advice, management and image upload functionality.",
-      technologies: ["Next.js", "Tailwind CSS", "Express.js", "MongoDB"],
-      github: "github/repo",
-      demo: "#",
+        "AI-enhanced learning platform built with a teammate: Spring Boot and MongoDB backend with WebSocket updates, a React front end, and a FastAPI + Gemini service that analyses video content to generate learning material.",
+      technologies: ["Spring Boot", "MongoDB", "React", "FastAPI", "Gemini AI"],
+      github: "https://github.com/Meraj2349/ai_powered_content_platform",
+      demo: "",
       image: "/api/placeholder/600/300",
+      featured: false,
+    },
+    {
+      title: "SmartSchool",
+      description:
+        "Full-stack school management system with an admin panel for student and teacher records, attendance, results and online admissions, plus a learning area and event management.",
+      technologies: ["React.js", "Express.js", "MySQL"],
+      github: "https://github.com/Meraj2349/SchoolProject",
+      demo: "",
+      image: "/api/placeholder/600/300",
+      featured: false,
+    },
+    {
+      title: "ICERIE 2025 Website",
+      description:
+        "Worked with a team on the Next.js website for SUST's International Conference on Engineering Research, Innovation and Education (ICERIE). Built the navbar, homepage and track pages, fixed bugs and took part in code reviews.",
+      technologies: ["Next.js", "Tailwind CSS", "Express.js", "MongoDB"],
+      github: "https://github.com/Meraj2349/arces_2024",
+      demo: "https://icerie2025.sust.edu/",
+      image: "/images/project/ICRIEimage.png",
+      featured: false,
+    },
+    {
+      title: "Library Management App",
+      description:
+        "Android library app in Java and Firebase: book catalogue, search, user sign-in and real-time data sync, with responsive XML layouts.",
+      technologies: ["Java", "XML", "Firebase"],
+      github: "https://github.com/Meraj2349/Library_Management_App",
+      demo: "",
+      image: "/images/project/libraryImage.png",
       featured: false,
     },
   ];
